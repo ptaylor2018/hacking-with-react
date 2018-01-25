@@ -31,21 +31,9 @@ class Detail extends React.Component {
         this.fetchFeed('pulls');
     }
 
-    showCommits() {
+    selectMode(mode) {
         this.setState({
-            mode: 'commits'
-        });
-    }
-
-    showForks() {
-        this.setState({
-            mode: 'forks'
-        });
-    }
-
-    showPulls() {
-        this.setState({
-            mode: 'pulls'
+            mode
         });
     }
 

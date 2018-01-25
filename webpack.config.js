@@ -8,7 +8,7 @@ module.exports = {
     entry: [
         'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
-        './index.js'
+        './index.jsx'
     ],
 
     output: {
@@ -26,7 +26,7 @@ module.exports = {
 
     module: {
         rules: [{
-            test: /\.js?$/,
+            test: /\.jsx?$/,
             use: [
                 'react-hot-loader/webpack',
                 'babel-loader?presets[]=react',
